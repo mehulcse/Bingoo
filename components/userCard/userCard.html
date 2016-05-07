@@ -1,0 +1,13 @@
+<div class="media re-media">
+  <div class="media-left media-middle re-media-middle image-container">
+    <a href="#">
+      <img class="media-object img-circle" ng-src={{userProfileImageUrl}} alt="friendImage" />
+    </a>
+    <span ng-class="{'on-off-dot': availibilitystatus == 'available' ,'on-off-dot or': availibilitystatus == 'busy', 'on-off-dot lt-or':availibilitystatus == 'offline'}"></span>
+  </div>
+  <div class="media-body re-media-body">
+    <h4 class="media-heading">{{userName}}</h4>
+    <p>{{userStatus}}</p>
+  </div>
+  <span class="badge mov-rt">{{unreadMsgCount}}</span>
+</div>
